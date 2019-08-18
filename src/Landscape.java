@@ -33,7 +33,11 @@ public class Landscape extends PApplet{
         noStroke();
         clear();
 
+
+//
         rotateX(PI / 4);
+//
+        translate(0, 0);
         scale(0.5f);
         translate(600, 1000);
 
@@ -43,11 +47,12 @@ public class Landscape extends PApplet{
             for(int y = 0; y < 1000; y++)
                 grid[x][y] = noise(x*noiseFactor + translateAmount[0]*noiseFactor, y*noiseFactor + translateAmount[1]*noiseFactor);
 
+
+
         for (int x = 0; x < 100; x++) {
             beginShape(TRIANGLE_STRIP);
             for (int y = 1; y < 100; y++) {
                 fill(grid[x][y] * 300);
-
                 if (190 < grid[x][y] * 300) {
                     fill(235, 235, 235);
                     stroke(255, 255, 255);
@@ -65,11 +70,19 @@ public class Landscape extends PApplet{
                     stroke(0, 80, 235);
                 }
 
+//
+
                 vertex(4 + 10 * (x + 0) - 300, 4 + 10 * (y + 0) - 500, grid[x][y] * 310);
                 vertex(4 + 10 * (x + 1) - 300, 4 + 10 * (y) - 500, grid[x + 1][y] * 310);
             }
             endShape(CLOSE);
         }
+
+        noStroke();
+        translate(0, 0, 107);
+        fill(0, 100, 255, 100);
+        rect(-325, -510, width+250, height+250);
+
     }
 
     public void keyPressed() {

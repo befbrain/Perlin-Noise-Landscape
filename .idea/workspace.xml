@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a7be8e4-986d-4cad-a9b1-36444f2a0ac3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Landscape/Landscape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Landscape/Landscape.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Landscape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Landscape.java" afterDir="false" />
